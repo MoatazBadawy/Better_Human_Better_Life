@@ -1,0 +1,3 @@
+package com.moataz.better_human.better_life.presentation.base.interfaces
+
+interface BaseInteractionListener

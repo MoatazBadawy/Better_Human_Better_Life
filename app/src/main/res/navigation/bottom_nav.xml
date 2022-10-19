@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/home_fragment">
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.moataz.better_human.better_life.presentation.home.view.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+    <fragment
+        android:id="@+id/videos_fragment"
+        android:name="com.moataz.better_human.better_life.presentation.videos.view.VideosFragment"
+        android:label="videos_fragment"
+        tools:layout="@layout/fragment_videos" />
+    <fragment
+        android:id="@+id/fragment_emergency"
+        android:name="com.moataz.better_human.better_life.presentation.emergency.view.EmergencyFragment"
+        android:label="fragment_emergency"
+        tools:layout="@layout/fragment_emergency" />
+    <fragment
+        android:id="@+id/habits_fragment"
+        android:name="com.moataz.better_human.better_life.presentation.habits.view.HabitsFragment"
+        android:label="habits_fragment"
+        tools:layout="@layout/fragment_habit" >
+        <action
+            android:id="@+id/action_habits_fragment_to_habitAdditionDialog"
+            app:destination="@id/habitAdditionDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/library_fragment"
+        android:name="com.moataz.better_human.better_life.presentation.library.view.LibraryFragment"
+        android:label="library_fragment"
+        tools:layout="@layout/fragment_library" />
+    <dialog
+        android:id="@+id/habitAdditionDialog"
+        android:name="com.moataz.better_human.better_life.presentation.habits.view.HabitAdditionDialog"
+        android:label="HabitAdditionDialog" />
+</navigation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_fragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/bt_nav_home" />
+
+    <item
+        android:id="@+id/videos_fragment"
+        android:icon="@drawable/ic_videos"
+        android:title="@string/bt_nav_videos" />
+
+    <item
+        android:id="@+id/emergency_fragment"
+        android:checkable="false"
+        android:enabled="false"
+        android:title="@string/bt_nav_emergency" />
+
+    <item
+        android:id="@+id/habits_fragment"
+        android:icon="@drawable/ic_habits"
+        android:title="@string/bt_nav_habits" />
+
+    <item
+        android:id="@+id/library_fragment"
+        android:icon="@drawable/ic_library"
+        android:title="@string/bt_nav_library" />
+</menu>
